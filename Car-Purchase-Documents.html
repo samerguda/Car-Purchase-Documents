@@ -1,81 +1,457 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Purchase Documents</title>
+    <title>قائمة الأفعال Flemish B1</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            direction: rtl;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.8;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            position: sticky;
+            top: 10px;
+            z-index: 100;
         }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: center;
-            padding: 8px;
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 0;
+            color: #2c3e50;
         }
-        th {
-            background-color: #f2f2f2;
+
+        .copy-btn {
+            background-color: #27ae60;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+        }
+
+        .copy-btn:hover {
+            background-color: #219150;
+        }
+
+        .copy-btn:active {
+            transform: scale(0.98);
+        }
+
+        .section-title {
+            background-color: #34495e;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+
+        .list-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        ol {
+            padding-right: 20px;
+            margin: 0;
+        }
+
+        li {
+            padding: 6px 0;
+            border-bottom: 1px dashed #eee;
+            font-size: 1.05rem;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .dutch {
+            font-weight: bold;
+            color: #2980b9;
+            direction: ltr;
+            display: inline-block;
+        }
+
+        .arabic {
+            color: #2c3e50;
+        }
+
+        .phonetic {
+            color: #7f8c8d;
+            font-size: 0.95rem;
         }
     </style>
 </head>
 <body>
-    <h2>الأوراق المطلوبة لشراء سيارة في البرتغال</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Arabic (العربية)</th>
-                <th>English</th>
-                <th>Portuguese</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>بطاقة الهوية</td>
-                <td>Identity Card</td>
-                <td>Cartão de Identidade</td>
-            </tr>
-            <tr>
-                <td>رقم تعريف الضريبة (NIF)</td>
-                <td>Tax Identification Number (NIF)</td>
-                <td>Número de Identificação Fiscal (NIF)</td>
-            </tr>
-            <tr>
-                <td>رخصة القيادة</td>
-                <td>Driving License</td>
-                <td>Carteira de Condução</td>
-            </tr>
-            <tr>
-                <td>إثبات العنوان</td>
-                <td>Proof of Address</td>
-                <td>Comprovativo de Morada</td>
-            </tr>
-            <tr>
-                <td>شهادة التسجيل (Certificado de Matrícula)</td>
-                <td>Registration Certificate (Certificado de Matrícula)</td>
-                <td>Certificado de Matrícula</td>
-            </tr>
-            <tr>
-                <td>شهادة الفحص الفني (IPO)</td>
-                <td>Technical Inspection Certificate (IPO)</td>
-                <td>Certificado de Inspeção Técnica (IPO)</td>
-            </tr>
-            <tr>
-                <td>التأمين على السيارة</td>
-                <td>Car Insurance</td>
-                <td>Seguro Automóvel</td>
-            </tr>
-            <tr>
-                <td>عقد الشراء</td>
-                <td>Purchase Contract</td>
-                <td>Contrato de Compra</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <div class="header-container">
+        <h1>🇧🇪 قائمة أفعال Flemish B1 (1–300)</h1>
+        <button class="copy-btn" onclick="copyListText()">
+            📋 نسخ القائمة كاملة
+        </button>
+    </div>
+
+    <div class="list-container" id="verbsContent">
+
+        <div class="section-title">🇧🇪 Flemish B1 — 1–100</div>
+        <ol start="1">
+            <li><span class="dutch">bereiken</span> — <span class="arabic">يحقق / يصل إلى</span> — <span class="phonetic">بِرَايْكَن</span></li>
+            <li><span class="dutch">vermijden</span> — <span class="arabic">يتجنب</span> — <span class="phonetic">فِيرْمَايدَن</span></li>
+            <li><span class="dutch">verklaren</span> — <span class="arabic">يشرح / يفسر</span> — <span class="phonetic">فِيرْكْلَارَن</span></li>
+            <li><span class="dutch">beïnvloeden</span> — <span class="arabic">يؤثر في</span> — <span class="phonetic">بِينْفْلُودَن</span></li>
+            <li><span class="dutch">veroorzaken</span> — <span class="arabic">يسبب</span> — <span class="phonetic">فِيرُورْزَاكَن</span></li>
+            <li><span class="dutch">voorkomen</span> — <span class="arabic">يمنع / يحدث</span> — <span class="phonetic">فُورْكُومَن</span></li>
+            <li><span class="dutch">veronderstellen</span> — <span class="arabic">يفترض</span> — <span class="phonetic">فِيرُونْدَرْسْتِلَن</span></li>
+            <li><span class="dutch">voorstellen</span> — <span class="arabic">يقترح / يقدم</span> — <span class="phonetic">فُورْسْتِلَن</span></li>
+            <li><span class="dutch">aantonen</span> — <span class="arabic">يثبت / يوضح</span> — <span class="phonetic">آنْتُونَن</span></li>
+            <li><span class="dutch">beoordelen</span> — <span class="arabic">يقيّم</span> — <span class="phonetic">بِأُورْدِيلَن</span></li>
+            <li><span class="dutch">onderzoeken</span> — <span class="arabic">يبحث / يفحص</span> — <span class="phonetic">أُونْدَرْزُوكَن</span></li>
+            <li><span class="dutch">ontdekken</span> — <span class="arabic">يكتشف</span> — <span class="phonetic">أُونْتْدِكَن</span></li>
+            <li><span class="dutch">waarnemen</span> — <span class="arabic">يلاحظ / يدرك</span> — <span class="phonetic">فَارْنِيمَن</span></li>
+            <li><span class="dutch">vermoeden</span> — <span class="arabic">يشتبه / يظن</span> — <span class="phonetic">فِيرْمُودَن</span></li>
+            <li><span class="dutch">lukken</span> — <span class="arabic">ينجح / يفلح</span> — <span class="phonetic">لُوكَن</span></li>
+            <li><span class="dutch">mislukken</span> — <span class="arabic">يفشل</span> — <span class="phonetic">مِسْلُوكَن</span></li>
+            <li><span class="dutch">volhouden</span> — <span class="arabic">يثابر</span> — <span class="phonetic">فُولْهَاوْدَن</span></li>
+            <li><span class="dutch">opgeven</span> — <span class="arabic">يستسلم / يتخلى عن</span> — <span class="phonetic">أُوبْخِيفَن</span></li>
+            <li><span class="dutch">verminderen</span> — <span class="arabic">يقلل</span> — <span class="phonetic">فِيرْمِنْدَرَن</span></li>
+            <li><span class="dutch">verhogen</span> — <span class="arabic">يزيد / يرفع</span> — <span class="phonetic">فِيرْهُوخَن</span></li>
+            <li><span class="dutch">uitbreiden</span> — <span class="arabic">يوسع</span> — <span class="phonetic">أَوْتْبْرَايْدَن</span></li>
+            <li><span class="dutch">ontwikkelen</span> — <span class="arabic">يطور</span> — <span class="phonetic">أُونْتْفِكَلَن</span></li>
+            <li><span class="dutch">groeien</span> — <span class="arabic">ينمو</span> — <span class="phonetic">خْغُوَيَن</span></li>
+            <li><span class="dutch">toenemen</span> — <span class="arabic">يزداد</span> — <span class="phonetic">تُونِيمَن</span></li>
+            <li><span class="dutch">afnemen</span> — <span class="arabic">ينخفض</span> — <span class="phonetic">أَفْنِيمَن</span></li>
+            <li><span class="dutch">stijgen</span> — <span class="arabic">يرتفع</span> — <span class="phonetic">سْتَايْخَن</span></li>
+            <li><span class="dutch">dalen</span> — <span class="arabic">ينخفض</span> — <span class="phonetic">دَالَن</span></li>
+            <li><span class="dutch">verbreden</span> — <span class="arabic">يوسع</span> — <span class="phonetic">فِيرْبْرِيدَن</span></li>
+            <li><span class="dutch">verdiepen</span> — <span class="arabic">يعمق</span> — <span class="phonetic">فِيرْدِيبَن</span></li>
+            <li><span class="dutch">versterken</span> — <span class="arabic">يقوي</span> — <span class="phonetic">فِيرْسْتِيرْكَن</span></li>
+            <li><span class="dutch">verslechteren</span> — <span class="arabic">يسوء</span> — <span class="phonetic">فِيرْسْلِخْتَرَن</span></li>
+            <li><span class="dutch">ondersteunen</span> — <span class="arabic">يدعم</span> — <span class="phonetic">أُونْدَرْسْتُونَن</span></li>
+            <li><span class="dutch">beschermen</span> — <span class="arabic">يحمي</span> — <span class="phonetic">بِسْخِيرْمَن</span></li>
+            <li><span class="dutch">behouden</span> — <span class="arabic">يحافظ على</span> — <span class="phonetic">بِهَاوْدَن</span></li>
+            <li><span class="dutch">bewaren</span> — <span class="arabic">يحفظ</span> — <span class="phonetic">بِفَارَن</span></li>
+            <li><span class="dutch">verdedigen</span> — <span class="arabic">يدافع عن</span> — <span class="phonetic">فِيرْدِيدِخَن</span></li>
+            <li><span class="dutch">beperken</span> — <span class="arabic">يحد</span> — <span class="phonetic">بِبِيرْكَن</span></li>
+            <li><span class="dutch">verbieden</span> — <span class="arabic">يمنع</span> — <span class="phonetic">فِيرْبِيدَن</span></li>
+            <li><span class="dutch">toestaan</span> — <span class="arabic">يسمح</span> — <span class="phonetic">تُوْسْتَان</span></li>
+            <li><span class="dutch">weigeren</span> — <span class="arabic">يرفض</span> — <span class="phonetic">فَايْخَرَن</span></li>
+            <li><span class="dutch">accepteren</span> — <span class="arabic">يقبل</span> — <span class="phonetic">أَكْسِيبْتِيرَن</span></li>
+            <li><span class="dutch">instemmen</span> — <span class="arabic">يوافق</span> — <span class="phonetic">أَنْسْتِمَن</span></li>
+            <li><span class="dutch">protesteren</span> — <span class="arabic">يحتج</span> — <span class="phonetic">بْرُوتِيسْتِيرَن</span></li>
+            <li><span class="dutch">klagen</span> — <span class="arabic">يشتكي</span> — <span class="phonetic">كْلَاخَن</span></li>
+            <li><span class="dutch">bekritiseren</span> — <span class="arabic">ينتقد</span> — <span class="phonetic">بِكْغِيتِيزِيرَن</span></li>
+            <li><span class="dutch">beoordelen</span> — <span class="arabic">يحكم / يقيّم</span> — <span class="phonetic">بِأُورْدِيلَن</span></li>
+            <li><span class="dutch">aanvaarden</span> — <span class="arabic">يقبل</span> — <span class="phonetic">آنْفَارْدَن</span></li>
+            <li><span class="dutch">verwerpen</span> — <span class="arabic">يرفض / يستبعد</span> — <span class="phonetic">فِيرْوِيرْبَن</span></li>
+            <li><span class="dutch">bevestigen</span> — <span class="arabic">يؤكد</span> — <span class="phonetic">بِفِيسْتِخَن</span></li>
+            <li><span class="dutch">ontkennen</span> — <span class="arabic">ينكر</span> — <span class="phonetic">أُونْتْكِينَن</span></li>
+            <li><span class="dutch">toegeven</span> — <span class="arabic">يعترف / يقر</span> — <span class="phonetic">تُوخِيفَن</span></li>
+            <li><span class="dutch">benadrukken</span> — <span class="arabic">يؤكد / يشدد</span> — <span class="phonetic">بِينَادْغُوكَن</span></li>
+            <li><span class="dutch">vermelden</span> — <span class="arabic">يذكر</span> — <span class="phonetic">فِيرْمِلْدَن</span></li>
+            <li><span class="dutch">aankondigen</span> — <span class="arabic">يعلن</span> — <span class="phonetic">آنْكُونْدِخَن</span></li>
+            <li><span class="dutch">meedelen</span> — <span class="arabic">يبلغ / يخبر</span> — <span class="phonetic">مَيْدِيلَن</span></li>
+            <li><span class="dutch">overtuigen</span> — <span class="arabic">يقنع</span> — <span class="phonetic">أُوفَرْتَاوْخَن</span></li>
+            <li><span class="dutch">onderhandelen</span> — <span class="arabic">يتفاوض</span> — <span class="phonetic">أُونْدَرْهَانْدَلَن</span></li>
+            <li><span class="dutch">overleggen</span> — <span class="arabic">يتشاور</span> — <span class="phonetic">أُوفَرْلِخَن</span></li>
+            <li><span class="dutch">discussiëren</span> — <span class="arabic">يناقش</span> — <span class="phonetic">دِيسْكُوسِيرَن</span></li>
+            <li><span class="dutch">argumenteren</span> — <span class="arabic">يجادل / يقدم حججًا</span> — <span class="phonetic">أَرْخُومَنْتِيرَن</span></li>
+            <li><span class="dutch">reageren</span> — <span class="arabic">يتفاعل / يرد</span> — <span class="phonetic">غِياخِيرَن</span></li>
+            <li><span class="dutch">reageren op</span> — <span class="arabic">يرد على</span> — <span class="phonetic">غِياخِيرَن أُوب</span></li>
+            <li><span class="dutch">communiceren</span> — <span class="arabic">يتواصل</span> — <span class="phonetic">كُومُونِيسِيرَن</span></li>
+            <li><span class="dutch">contact opnemen</span> — <span class="arabic">يتواصل</span> — <span class="phonetic">كُونْتَاكْت أُوبْنِيمَن</span></li>
+            <li><span class="dutch">samenwerken</span> — <span class="arabic">يتعاون</span> — <span class="phonetic">سَامَن وِيرْكَن</span></li>
+            <li><span class="dutch">deelnemen</span> — <span class="arabic">يشارك</span> — <span class="phonetic">دِيلْنِيمَن</span></li>
+            <li><span class="dutch">bijdragen</span> — <span class="arabic">يساهم</span> — <span class="phonetic">بَايْدْرَاخَن</span></li>
+            <li><span class="dutch">betrekken</span> — <span class="arabic">يشرك</span> — <span class="phonetic">بِتْرِكَن</span></li>
+            <li><span class="dutch">meewerken</span> — <span class="arabic">يتعاون</span> — <span class="phonetic">مَيْوِيرْكَن</span></li>
+            <li><span class="dutch">aanpassen</span> — <span class="arabic">يتكيف / يعدل</span> — <span class="phonetic">آنْبَاسَن</span></li>
+            <li><span class="dutch">zich gedragen</span> — <span class="arabic">يتصرف</span> — <span class="phonetic">زِخ خِدْغَاخَن</span></li>
+            <li><span class="dutch">zich aanpassen</span> — <span class="arabic">يتكيف</span> — <span class="phonetic">زِخ آنْبَاسَن</span></li>
+            <li><span class="dutch">zich voorbereiden</span> — <span class="arabic">يستعد</span> — <span class="phonetic">زِخ فُورْبِيرَايْدَن</span></li>
+            <li><span class="dutch">zich concentreren</span> — <span class="arabic">يركز</span> — <span class="phonetic">زِخ كُونْسَنْتْغِيرَن</span></li>
+            <li><span class="dutch">solliciteren</span> — <span class="arabic">يتقدم لوظيفة</span> — <span class="phonetic">سُولِيسِيتِيرَن</span></li>
+            <li><span class="dutch">aanwerven</span> — <span class="arabic">يوظف</span> — <span class="phonetic">آنْفِيرْفَن</span></li>
+            <li><span class="dutch">ontslaan</span> — <span class="arabic">يفصل من العمل</span> — <span class="phonetic">أُونْتْسْلَان</span></li>
+            <li><span class="dutch">verdienen</span> — <span class="arabic">يكسب</span> — <span class="phonetic">فِيرْدِينَن</span></li>
+            <li><span class="dutch">uitgeven</span> — <span class="arabic">ينفق</span> — <span class="phonetic">أَوْتْخِيفَن</span></li>
+            <li><span class="dutch">sparen</span> — <span class="arabic">يدخر</span> — <span class="phonetic">سْبَارَن</span></li>
+            <li><span class="dutch">lenen</span> — <span class="arabic">يقترض / يستعير</span> — <span class="phonetic">لِينَن</span></li>
+            <li><span class="dutch">terugbetalen</span> — <span class="arabic">يسدد</span> — <span class="phonetic">تِرُوخْبِيتَالَن</span></li>
+            <li><span class="dutch">investeren</span> — <span class="arabic">يستثمر</span> — <span class="phonetic">أَنْفِيسْتِيرَن</span></li>
+            <li><span class="dutch">besparen</span> — <span class="arabic">يوفر</span> — <span class="phonetic">بِسْبَارَن</span></li>
+            <li><span class="dutch">verbruiken</span> — <span class="arabic">يستهلك</span> — <span class="phonetic">فِيرْبْرَاوْكَن</span></li>
+            <li><span class="dutch">produceren</span> — <span class="arabic">ينتج</span> — <span class="phonetic">بْرُودُوسِيرَن</span></li>
+            <li><span class="dutch">leveren</span> — <span class="arabic">يورد / يسلم</span> — <span class="phonetic">لِيفَرَن</span></li>
+            <li><span class="dutch">besteden</span> — <span class="arabic">ينفق / يخصص</span> — <span class="phonetic">بِسْتِيدَن</span></li>
+            <li><span class="dutch">aanschaffen</span> — <span class="arabic">يشتري / يقتني</span> — <span class="phonetic">آنْسْخَافَن</span></li>
+            <li><span class="dutch">vervangen</span> — <span class="arabic">يستبدل</span> — <span class="phonetic">فِيرْفَانْخَن</span></li>
+            <li><span class="dutch">herstellen</span> — <span class="arabic">يصلح / يعيد</span> — <span class="phonetic">هِيرْسْتِلَن</span></li>
+            <li><span class="dutch">onderhouden</span> — <span class="arabic">يصون / يحافظ على</span> — <span class="phonetic">أُونْدَرْهَاوْدَن</span></li>
+            <li><span class="dutch">beschikbaar zijn</span> — <span class="arabic">يكون متاحًا</span> — <span class="phonetic">بِسْخِيكْبَار زَايْن</span></li>
+            <li><span class="dutch">functioneren</span> — <span class="arabic">يعمل</span> — <span class="phonetic">فُونْكْسْيُونِيرَن</span></li>
+            <li><span class="dutch">bedienen</span> — <span class="arabic">يشغل / يستخدم</span> — <span class="phonetic">بِدِينَن</span></li>
+            <li><span class="dutch">verbinden</span> — <span class="arabic">يربط / يوصل</span> — <span class="phonetic">فِيرْبِنْدَن</span></li>
+            <li><span class="dutch">losmaken</span> — <span class="arabic">يفك / يفصل</span> — <span class="phonetic">لُوسْمَاكَن</span></li>
+            <li><span class="dutch">verzenden</span> — <span class="arabic">يرسل</span> — <span class="phonetic">فِيرْزِنْدَن</span></li>
+            <li><span class="dutch">ontvangen</span> — <span class="arabic">يستلم</span> — <span class="phonetic">أُونْتْفَانخَن</span></li>
+            <li><span class="dutch">doorsturen</span> — <span class="arabic">يعيد إرسال</span> — <span class="phonetic">دُورْسْتُورَن</span></li>
+        </ol>
+
+        <div class="section-title">🇧🇪 Flemish B1 — 101–200</div>
+        <ol start="101">
+            <li><span class="dutch">beantwoorden</span> — <span class="arabic">يجيب على</span> — <span class="phonetic">بِآنْتْفُورْدَن</span></li>
+            <li><span class="dutch">inloggen</span> — <span class="arabic">يسجل الدخول</span> — <span class="phonetic">أَنْلُوخَن</span></li>
+            <li><span class="dutch">uitloggen</span> — <span class="arabic">يسجل الخروج</span> — <span class="phonetic">أَوْتْلُوخَن</span></li>
+            <li><span class="dutch">registreren</span> — <span class="arabic">يسجل</span> — <span class="phonetic">غِيجِيسْتْغِيرَن</span></li>
+            <li><span class="dutch">aanmelden</span> — <span class="arabic">يسجل / يبلغ</span> — <span class="phonetic">آنْمِلْدَن</span></li>
+            <li><span class="dutch">afmelden</span> — <span class="arabic">يلغي التسجيل</span> — <span class="phonetic">أَفْمِلْدَن</span></li>
+            <li><span class="dutch">invullen</span> — <span class="arabic">يملأ</span> — <span class="phonetic">أَنْفُلَن</span></li>
+            <li><span class="dutch">ondertekenen</span> — <span class="arabic">يوقع</span> — <span class="phonetic">أُونْدَرْتِيكَنَن</span></li>
+            <li><span class="dutch">aanvragen</span> — <span class="arabic">يقدم طلبًا</span> — <span class="phonetic">آنْفْرَاخَن</span></li>
+            <li><span class="dutch">indienen</span> — <span class="arabic">يقدم رسميًا</span> — <span class="phonetic">أَنْدِينَن</span></li>
+            <li><span class="dutch">regelen</span> — <span class="arabic">يرتب / ينظم</span> — <span class="phonetic">رِخِلَن</span></li>
+            <li><span class="dutch">controleren</span> — <span class="arabic">يفحص</span> — <span class="phonetic">كُونْتْرُولِيرَن</span></li>
+            <li><span class="dutch">boeken</span> — <span class="arabic">يحجز</span> — <span class="phonetic">بُوكَن</span></li>
+            <li><span class="dutch">inhalen</span> — <span class="arabic">يتجاوز</span> — <span class="phonetic">أَنْهَالَن</span></li>
+            <li><span class="dutch">vertragen</span> — <span class="arabic">يبطئ / يؤخر</span> — <span class="phonetic">فِيرْتْغَاخَن</span></li>
+            <li><span class="dutch">versnellen</span> — <span class="arabic">يسرّع</span> — <span class="phonetic">فِيرْسْنِلَن</span></li>
+            <li><span class="dutch">omrijden</span> — <span class="arabic">يسلك طريقًا أطول</span> — <span class="phonetic">أُمْرَايْدَن</span></li>
+            <li><span class="dutch">verdwalen</span> — <span class="arabic">يضل الطريق</span> — <span class="phonetic">فِيرْدْوَالَن</span></li>
+            <li><span class="dutch">bereiken</span> — <span class="arabic">يصل إلى</span> — <span class="phonetic">بِرَايْكَن</span></li>
+            <li><span class="dutch">passeren</span> — <span class="arabic">يمر / يتجاوز</span> — <span class="phonetic">بَاسِيرَن</span></li>
+            <li><span class="dutch">verblijven</span> — <span class="arabic">يقيم</span> — <span class="phonetic">فِيرْبْلَايْفَن</span></li>
+            <li><span class="dutch">rondreizen</span> — <span class="arabic">يسافر حول</span> — <span class="phonetic">رُونْدْرَايْزَن</span></li>
+            <li><span class="dutch">bezichtigen</span> — <span class="arabic">يشاهد / يزور معلمًا</span> — <span class="phonetic">بِزِخْتِخَن</span></li>
+            <li><span class="dutch">verkennen</span> — <span class="arabic">يستكشف</span> — <span class="phonetic">فِيرْكِينَن</span></li>
+            <li><span class="dutch">genieten van</span> — <span class="arabic">يستمتع بـ</span> — <span class="phonetic">خِنِيتَن فَان</span></li>
+            <li><span class="dutch">ontspannen</span> — <span class="arabic">يسترخي</span> — <span class="phonetic">أُونْتْسْبَانَن</span></li>
+            <li><span class="dutch">zich vermaken</span> — <span class="arabic">يستمتع</span> — <span class="phonetic">زِخ فِيرْمَاكَن</span></li>
+            <li><span class="dutch">meemaken</span> — <span class="arabic">يمر بتجربة</span> — <span class="phonetic">مَيْمَاكَن</span></li>
+            <li><span class="dutch">beleven</span> — <span class="arabic">يعيش تجربة</span> — <span class="phonetic">بِيلِيفَن</span></li>
+            <li><span class="dutch">oplossen</span> — <span class="arabic">يحل</span> — <span class="phonetic">أُوبْلُوسَن</span></li>
+            <li><span class="dutch">beschadigen</span> — <span class="arabic">يتلف</span> — <span class="phonetic">بِسْخَادِخَن</span></li>
+            <li><span class="dutch">vernielen</span> — <span class="arabic">يدمر</span> — <span class="phonetic">فِيرْنِيلَن</span></li>
+            <li><span class="dutch">verbouwen</span> — <span class="arabic">يجدد / يعيد البناء</span> — <span class="phonetic">فِيرْبَاوْوَن</span></li>
+            <li><span class="dutch">verplaatsen</span> — <span class="arabic">ينقل / يحرك</span> — <span class="phonetic">فِيرْبْلَاسَن</span></li>
+            <li><span class="dutch">vastmaken</span> — <span class="arabic">يثبت</span> — <span class="phonetic">فَاسْتْمَاكَن</span></li>
+            <li><span class="dutch">loslaten</span> — <span class="arabic">يترك / يطلق</span> — <span class="phonetic">لُوسْلَاتَن</span></li>
+            <li><span class="dutch">vasthouden</span> — <span class="arabic">يمسك</span> — <span class="phonetic">فَاسْتْهَاوْدَن</span></li>
+            <li><span class="dutch">ophalen</span> — <span class="arabic">يستلم</span> — <span class="phonetic">أُوبْهَالَن</span></li>
+            <li><span class="dutch">bezorgen</span> — <span class="arabic">يوصل</span> — <span class="phonetic">بِزُورْخَن</span></li>
+            <li><span class="dutch">inpakken</span> — <span class="arabic">يحزم</span> — <span class="phonetic">أَنْبَاكَن</span></li>
+            <li><span class="dutch">uitpakken</span> — <span class="arabic">يفرغ الحقيبة</span> — <span class="phonetic">أَوْتْبَاكَن</span></li>
+            <li><span class="dutch">verpakken</span> — <span class="arabic">يغلف</span> — <span class="phonetic">فِيرْبَاكَن</span></li>
+            <li><span class="dutch">sorteren</span> — <span class="arabic">يفرز</span> — <span class="phonetic">سُورْتِيرَن</span></li>
+            <li><span class="dutch">verzamelen</span> — <span class="arabic">يجمع</span> — <span class="phonetic">فِيرْزَامَلَن</span></li>
+            <li><span class="dutch">verdelen</span> — <span class="arabic">يوزع</span> — <span class="phonetic">فِيرْدِيلَن</span></li>
+            <li><span class="dutch">kennismaken</span> — <span class="arabic">يتعرف</span> — <span class="phonetic">كِينِسْمَاكَن</span></li>
+            <li><span class="dutch">afscheid nemen</span> — <span class="arabic">يودع</span> — <span class="phonetic">أَفْسْخَايْد نِيمَن</span></li>
+            <li><span class="dutch">feliciteren</span> — <span class="arabic">يهنئ</span> — <span class="phonetic">فِيلِيسِيتِيرَن</span></li>
+            <li><span class="dutch">bedanken</span> — <span class="arabic">يشكر</span> — <span class="phonetic">بِدَانْكَن</span></li>
+            <li><span class="dutch">vergeven</span> — <span class="arabic">يسامح</span> — <span class="phonetic">فِيرْخِيفَن</span></li>
+            <li><span class="dutch">ondersteunen</span> — <span class="arabic">يدعم</span> — <span class="phonetic">أُونْدَرْسْتُونَن</span></li>
+            <li><span class="dutch">veroorloven</span> — <span class="arabic">يسمح لنفسه / يقدر ماليًا</span> — <span class="phonetic">فِيرُورْلُوفَن</span></li>
+            <li><span class="dutch">afhangen van</span> — <span class="arabic">يعتمد على</span> — <span class="phonetic">أَفْهَانْخَن فَان</span></li>
+            <li><span class="dutch">beschikken over</span> — <span class="arabic">يمتلك / يتوفر لديه</span> — <span class="phonetic">بِسْخِيكَن أُوفَر</span></li>
+            <li><span class="dutch">bestaan uit</span> — <span class="arabic">يتكون من</span> — <span class="phonetic">بِسْتَان أَوْت</span></li>
+            <li><span class="dutch">leiden tot</span> — <span class="arabic">يؤدي إلى</span> — <span class="phonetic">لَايْدَن تُوت</span></li>
+            <li><span class="dutch">zorgen voor</span> — <span class="arabic">يعتني بـ / يسبب</span> — <span class="phonetic">زُورْخَن فُور</span></li>
+            <li><span class="dutch">rekening houden met</span> — <span class="arabic">يأخذ بعين الاعتبار</span> — <span class="phonetic">غِيكَنِنْخ هَاوْدَن مِت</span></li>
+            <li><span class="dutch">gebruikmaken van</span> — <span class="arabic">يستفيد من / يستخدم</span> — <span class="phonetic">خِبْغَاوْكْمَاكَن فَان</span></li>
+            <li><span class="dutch">omgaan met</span> — <span class="arabic">يتعامل مع</span> — <span class="phonetic">أُمْخَان مِت</span></li>
+            <li><span class="dutch">te maken hebben met</span> — <span class="arabic">له علاقة بـ</span> — <span class="phonetic">تِ مَاكَن هِبَن مِت</span></li>
+            <li><span class="dutch">zich richten op</span> — <span class="arabic">يركز على</span> — <span class="phonetic">زِخ غِخْتَن أُوب</span></li>
+            <li><span class="dutch">zich voorbereiden op</span> — <span class="arabic">يستعد لـ</span> — <span class="phonetic">زِخ فُورْبِيرَايْدَن أُوب</span></li>
+            <li><span class="dutch">zich verdiepen in</span> — <span class="arabic">يتعمق في</span> — <span class="phonetic">زِخ فِيرْدِيبَن أَنْ</span></li>
+            <li><span class="dutch">zich aanpassen aan</span> — <span class="arabic">يتكيف مع</span> — <span class="phonetic">زِخ آنْبَاسَن آن</span></li>
+            <li><span class="dutch">zich gedragen als</span> — <span class="arabic">يتصرف مثل</span> — <span class="phonetic">زِخ خِدْغَاخَن أَلْس</span></li>
+            <li><span class="dutch">zich inzetten voor</span> — <span class="arabic">يبذل جهدًا من أجل</span> — <span class="phonetic">زِخ أَنْزِتَن فُور</span></li>
+            <li><span class="dutch">zich verzetten tegen</span> — <span class="arabic">يقاوم</span> — <span class="phonetic">زِخ فِيرْزِتَن تِيخَن</span></li>
+            <li><span class="dutch">zich bewust worden van</span> — <span class="arabic">يدرك</span> — <span class="phonetic">زِخ بُوسْت فُورْدَن فَان</span></li>
+            <li><span class="dutch">zich herinneren</span> — <span class="arabic">يتذكر</span> — <span class="phonetic">زِخ هِرِينَرَن</span></li>
+            <li><span class="dutch">zich realiseren</span> — <span class="arabic">يدرك</span> — <span class="phonetic">زِخ غِيَالِيزِيرَن</span></li>
+            <li><span class="dutch">vermoeien</span> — <span class="arabic">يتعب</span> — <span class="phonetic">فِيرْمُوِيَن</span></li>
+            <li><span class="dutch">ontwaken</span> — <span class="arabic">يستيقظ</span> — <span class="phonetic">أُونْتْفَاكَن</span></li>
+            <li><span class="dutch">herstellen</span> — <span class="arabic">يتعافى / يصلح</span> — <span class="phonetic">هِيرْسْتِلَن</span></li>
+            <li><span class="dutch">genezen</span> — <span class="arabic">يشفى</span> — <span class="phonetic">خِنِيزَن</span></li>
+            <li><span class="dutch">behandelen</span> — <span class="arabic">يعالج</span> — <span class="phonetic">بِهَانْدَلَن</span></li>
+            <li><span class="dutch">verzorgen</span> — <span class="arabic">يعتني بـ</span> — <span class="phonetic">فِيرْزُورْخَن</span></li>
+            <li><span class="dutch">voorkeur geven aan</span> — <span class="arabic">يفضل</span> — <span class="phonetic">فُورْكِير خِيفَن آن</span></li>
+            <li><span class="dutch">ademen</span> — <span class="arabic">يتنفس</span> — <span class="phonetic">أَادَمَن</span></li>
+            <li><span class="dutch">bewegen</span> — <span class="arabic">يتحرك</span> — <span class="phonetic">بِفِخَن</span></li>
+            <li><span class="dutch">trainen</span> — <span class="arabic">يتدرب</span> — <span class="phonetic">تْغَايْنَن</span></li>
+            <li><span class="dutch">veranderen</span> — <span class="arabic">يتغير</span> — <span class="phonetic">فِيرَانْدَرَن</span></li>
+            <li><span class="dutch">ontstaan</span> — <span class="arabic">ينشأ</span> — <span class="phonetic">أُونْتْسْتَان</span></li>
+            <li><span class="dutch">verdwijnen</span> — <span class="arabic">يختفي</span> — <span class="phonetic">فِيرْدْفَايْنَن</span></li>
+            <li><span class="dutch">verschijnen</span> — <span class="arabic">يظهر</span> — <span class="phonetic">فِيرْسْخَايْنَن</span></li>
+            <li><span class="dutch">toevallig gebeuren</span> — <span class="arabic">يحدث بالصدفة</span> — <span class="phonetic">تُوفَالِخ خِبُورَن</span></li>
+            <li><span class="dutch">plaatsvinden</span> — <span class="arabic">يحدث / يقام</span> — <span class="phonetic">بْلَاتْسْفِنْدَن</span></li>
+            <li><span class="dutch">gebeuren</span> — <span class="arabic">يحدث</span> — <span class="phonetic">خِبُورَن</span></li>
+            <li><span class="dutch">ontbreken</span> — <span class="arabic">يكون مفقودًا</span> — <span class="phonetic">أُونْتْبْغِيكَن</span></li>
+            <li><span class="dutch">voorkomen</span> — <span class="arabic">يوجد / يحدث</span> — <span class="phonetic">فُورْكُومَن</span></li>
+            <li><span class="dutch">voortduren</span> — <span class="arabic">يستمر</span> — <span class="phonetic">فُورْتْدُورَن</span></li>
+            <li><span class="dutch">uitstellen</span> — <span class="arabic">يؤجل</span> — <span class="phonetic">أَوْتْسْتِلَن</span></li>
+            <li><span class="dutch">verschuiven</span> — <span class="arabic">يؤجل / يحرك</span> — <span class="phonetic">فِيرْسْخَاوْفَن</span></li>
+            <li><span class="dutch">beëindigen</span> — <span class="arabic">ينهي</span> — <span class="phonetic">بِإَانْدِخَن</span></li>
+            <li><span class="dutch">afsluiten</span> — <span class="arabic">يغلق / ينهي</span> — <span class="phonetic">أَفْسْلَاوْتَن</span></li>
+            <li><span class="dutch">voortzetten</span> — <span class="arabic">يواصل</span> — <span class="phonetic">فُورْتْزِتَن</span></li>
+            <li><span class="dutch">bijhouden</span> — <span class="arabic">يتابع / يحافظ على</span> — <span class="phonetic">بَايْهَاوْدَن</span></li>
+            <li><span class="dutch">bijwerken</span> — <span class="arabic">يحدث / يحدّث</span> — <span class="phonetic">بَايْوِيرْكَن</span></li>
+            <li><span class="dutch">aanvullen</span> — <span class="arabic">يكمل / يضيف</span> — <span class="phonetic">آنْفُلَن</span></li>
+            <li><span class="dutch">verwijderen</span> — <span class="arabic">يزيل</span> — <span class="phonetic">فِيرْوَايْدَرَن</span></li>
+        </ol>
+
+        <div class="section-title">🇧🇪 Flemish B1 — 201–300</div>
+        <ol start="201">
+            <li><span class="dutch">verwerken</span> — <span class="arabic">يعالج / يتعامل مع</span> — <span class="phonetic">فِيرْوِيرْكَن</span></li>
+            <li><span class="dutch">benutten</span> — <span class="arabic">يستغل / يستخدم</span> — <span class="phonetic">بِينُوتَن</span></li>
+            <li><span class="dutch">toepassen</span> — <span class="arabic">يطبق</span> — <span class="phonetic">تُوبَاسَن</span></li>
+            <li><span class="dutch">uitvoeren</span> — <span class="arabic">ينفذ</span> — <span class="phonetic">أَوْتْفُورَن</span></li>
+            <li><span class="dutch">uitwerken</span> — <span class="arabic">يطور بالتفصيل</span> — <span class="phonetic">أَوْتْوِيرْكَن</span></li>
+            <li><span class="dutch">opbouwen</span> — <span class="arabic">يبني / يكوّن</span> — <span class="phonetic">أُوبْبَاوْوَن</span></li>
+            <li><span class="dutch">afbreken</span> — <span class="arabic">يهدم / يفك</span> — <span class="phonetic">أَفْبْرِيكَن</span></li>
+            <li><span class="dutch">bewerken</span> — <span class="arabic">يعالج / يحرر</span> — <span class="phonetic">بِفِيرْكَن</span></li>
+            <li><span class="dutch">verbinden</span> — <span class="arabic">يربط</span> — <span class="phonetic">فِيرْبِنْدَن</span></li>
+            <li><span class="dutch">scheiden</span> — <span class="arabic">يفصل</span> — <span class="phonetic">سْخَايْدَن</span></li>
+            <li><span class="dutch">splitsen</span> — <span class="arabic">يقسم</span> — <span class="phonetic">سْبْلِتْسَن</span></li>
+            <li><span class="dutch">vermenigvuldigen</span> — <span class="arabic">يضاعف</span> — <span class="phonetic">فِيرْمِينِخْفُولْدِخَن</span></li>
+            <li><span class="dutch">berekenen</span> — <span class="arabic">يحسب</span> — <span class="phonetic">بِرِيكَنَن</span></li>
+            <li><span class="dutch">schatten</span> — <span class="arabic">يقدّر</span> — <span class="phonetic">سْخَاتَن</span></li>
+            <li><span class="dutch">meten</span> — <span class="arabic">يقيس</span> — <span class="phonetic">مِيتَن</span></li>
+            <li><span class="dutch">wegen</span> — <span class="arabic">يزن</span> — <span class="phonetic">فِيخَن</span></li>
+            <li><span class="dutch">beïnvloeden</span> — <span class="arabic">تؤثر</span> — <span class="phonetic">بِينْفْلُودَن</span></li>
+            <li><span class="dutch">beïnvloed worden</span> — <span class="arabic">يتأثر</span> — <span class="phonetic">بِينْفْلُود فُورْدَن</span></li>
+            <li><span class="dutch">aanmoedigen</span> — <span class="arabic">يشجع</span> — <span class="phonetic">آنْمُودِخَن</span></li>
+            <li><span class="dutch">inspireren</span> — <span class="arabic">يلهم</span> — <span class="phonetic">أَنْسْبِيرِيرَن</span></li>
+            <li><span class="dutch">motiveren</span> — <span class="arabic">يحفز</span> — <span class="phonetic">مُوتِيفِيرَن</span></li>
+            <li><span class="dutch">ontmoedigen</span> — <span class="arabic">يثبط</span> — <span class="phonetic">أُونْتْمُودِخَن</span></li>
+            <li><span class="dutch">overtuigen</span> — <span class="arabic">يقنع</span> — <span class="phonetic">أُوفَرْتَاوْخَن</span></li>
+            <li><span class="dutch">verleiden</span> — <span class="arabic">يغري</span> — <span class="phonetic">فِيرْلَايْدَن</span></li>
+            <li><span class="dutch">dwingen</span> — <span class="arabic">يجبر</span> — <span class="phonetic">دْفِنْخَن</span></li>
+            <li><span class="dutch">weigeren</span> — <span class="arabic">يرفض</span> — <span class="phonetic">فَايْخَرَن</span></li>
+            <li><span class="dutch">verplichten</span> — <span class="arabic">يلزم</span> — <span class="phonetic">فِيرْبْلِخْتَن</span></li>
+            <li><span class="dutch">ontsnappen</span> — <span class="arabic">يهرب</span> — <span class="phonetic">أُونْتْسْنَابَن</span></li>
+            <li><span class="dutch">overwinnen</span> — <span class="arabic">يتغلب على</span> — <span class="phonetic">أُوفَرْفِنَن</span></li>
+            <li><span class="dutch">bestrijden</span> — <span class="arabic">يكافح</span> — <span class="phonetic">بِسْتْغَايْدَن</span></li>
+            <li><span class="dutch">verdedigen</span> — <span class="arabic">يدافع</span> — <span class="phonetic">فِيرْدِيدِخَن</span></li>
+            <li><span class="dutch">aanvallen</span> — <span class="arabic">يهاجم</span> — <span class="phonetic">آنْفَالَن</span></li>
+            <li><span class="dutch">beschuldigen</span> — <span class="arabic">يتهم</span> — <span class="phonetic">بِسْخُولْدِخَن</span></li>
+            <li><span class="dutch">verontschuldigen</span> — <span class="arabic">يعتذر</span> — <span class="phonetic">فِيرُونْتْسْخُولْدِخَن</span></li>
+            <li><span class="dutch">bedriegen</span> — <span class="arabic">يخدع</span> — <span class="phonetic">بِدْغِيجَن</span></li>
+            <li><span class="dutch">liegen</span> — <span class="arabic">يكذب</span> — <span class="phonetic">لِيخَن</span></li>
+            <li><span class="dutch">eerbiedigen</span> — <span class="arabic">يحترم</span> — <span class="phonetic">إِيرْبِيدِخَن</span></li>
+            <li><span class="dutch">waarderen</span> — <span class="arabic">يقدّر</span> — <span class="phonetic">فَارْدِيرَن</span></li>
+            <li><span class="dutch">verantwoordelijk zijn</span> — <span class="arabic">يكون مسؤولًا</span> — <span class="phonetic">فِيرَانْتْفُورْدَلَك زَايْن</span></li>
+            <li><span class="dutch">bijdragen aan</span> — <span class="arabic">يساهم في</span> — <span class="phonetic">بَايْدْرَاخَن آن</span></li>
+            <li><span class="dutch">ontbreken aan</span> — <span class="arabic">ينقصه / يفتقر إلى</span></li>
+            <li><span class="dutch">overwegen</span> — <span class="arabic">يفكر في / يدرس</span></li>
+            <li><span class="dutch">voldoen aan</span> — <span class="arabic">يلبي / يستوفي (الشروط)</span></li>
+            <li><span class="dutch">veronderstellen dat</span> — <span class="arabic">يفترض أن</span></li>
+            <li><span class="dutch">twijfelen aan</span> — <span class="arabic">يشك في</span></li>
+            <li><span class="dutch">vertrouwen op</span> — <span class="arabic">يثق بـ</span></li>
+            <li><span class="dutch">steunen op</span> — <span class="arabic">يعتمد على / يستند إلى</span></li>
+            <li><span class="dutch">bepalen</span> — <span class="arabic">يحدد / يقرر</span></li>
+            <li><span class="dutch">vaststellen</span> — <span class="arabic">يكتشف / يحدد</span></li>
+            <li><span class="dutch">opmerken</span> — <span class="arabic">يلاحظ</span></li>
+            <li><span class="dutch">aannemen</span> — <span class="arabic">يفترض / يقبل</span></li>
+            <li><span class="dutch">uitsluiten</span> — <span class="arabic">يستبعد</span></li>
+            <li><span class="dutch">opvallen</span> — <span class="arabic">يلفت الانتباه</span></li>
+            <li><span class="dutch">beschouwen als</span> — <span class="arabic">يعتبر كـ</span></li>
+            <li><span class="dutch">erkennen</span> — <span class="arabic">يعترف بـ / يقر</span></li>
+            <li><span class="dutch">ontkennen dat</span> — <span class="arabic">ينكر أن</span></li>
+            <li><span class="dutch">bewijzen</span> — <span class="arabic">يثبت / يبرهن</span></li>
+            <li><span class="dutch">benadrukken dat</span> — <span class="arabic">يشدد على أن</span></li>
+            <li><span class="dutch">toelichten</span> — <span class="arabic">يوضح / يشرح</span></li>
+            <li><span class="dutch">samenvatten</span> — <span class="arabic">يلخص</span></li>
+            <li><span class="dutch">citeren</span> — <span class="arabic">يستشهد بـ</span></li>
+            <li><span class="dutch">beweren</span> — <span class="arabic">يزعم / يدعي</span></li>
+            <li><span class="dutch">ontvangen</span> — <span class="arabic">يستقبل / يستلم</span></li>
+            <li><span class="dutch">behandelen</span> — <span class="arabic">يتناول (موضوعًا)</span></li>
+            <li><span class="dutch">onderhandelen over</span> — <span class="arabic">يتفاوض بشأن</span></li>
+            <li><span class="dutch">overleggen met</span> — <span class="arabic">يتشاور مع</span></li>
+            <li><span class="dutch">overtuigen van</span> — <span class="arabic">يقنع بـ</span></li>
+            <li><span class="dutch">berusten op</span> — <span class="arabic">يستند إلى</span></li>
+            <li><span class="dutch">voorkomen dat</span> — <span class="arabic">يمنع أن</span></li>
+            <li><span class="dutch">zorgen dat</span> — <span class="arabic">يحرص على أن</span></li>
+            <li><span class="dutch">veronderstellen</span> — <span class="arabic">يفترض</span></li>
+            <li><span class="dutch">aanraden</span> — <span class="arabic">ينصح بـ</span></li>
+            <li><span class="dutch">afraden</span> — <span class="arabic">ينصح عدم بـ</span></li>
+            <li><span class="dutch">waarschuwen voor</span> — <span class="arabic">يحذر من</span></li>
+            <li><span class="dutch">voorzien van</span> — <span class="arabic">يزود بـ</span></li>
+            <li><span class="dutch">voorzien in</span> — <span class="arabic">يلبي (احتياجات)</span></li>
+            <li><span class="dutch">opleveren</span> — <span class="arabic">ينتج / يسفر عن</span></li>
+            <li><span class="dutch">uitmaken</span> — <span class="arabic">يمثل / يشكل</span></li>
+            <li><span class="dutch">bedragen</span> — <span class="arabic">يبلغ (مبلغًا)</span></li>
+            <li><span class="dutch">stijgen met</span> — <span class="arabic">يرتفع بنسبة</span></li>
+            <li><span class="dutch">dalen met</span> — <span class="arabic">ينخفض بنسبة</span></li>
+            <li><span class="dutch">toenemen met</span> — <span class="arabic">يزداد بنسبة</span></li>
+            <li><span class="dutch">afnemen met</span> — <span class="arabic">ينقص بنسبة</span></li>
+            <li><span class="dutch">beperken tot</span> — <span class="arabic">يقتصر على</span></li>
+            <li><span class="dutch">uitbreiden met</span> — <span class="arabic">يوسع بـ</span></li>
+            <li><span class="dutch">vergelijken met</span> — <span class="arabic">يقارن بـ</span></li>
+            <li><span class="dutch">onderscheiden van</span> — <span class="arabic">يميز عن</span></li>
+            <li><span class="dutch">overeenkomen met</span> — <span class="arabic">يتوافق مع</span></li>
+            <li><span class="dutch">verschillen van</span> — <span class="arabic">يختلف عن</span></li>
+            <li><span class="dutch">afwijken van</span> — <span class="arabic">ينحرف عن / يختلف</span></li>
+            <li><span class="dutch">voldoen</span> — <span class="arabic">يكفي / يرضي</span></li>
+            <li><span class="dutch">geschikt zijn voor</span> — <span class="arabic">يكون مناسبًا لـ</span></li>
+            <li><span class="dutch">bestemd zijn voor</span> — <span class="arabic">مخصص لـ</span></li>
+            <li><span class="dutch">afhankelijk zijn van</span> — <span class="arabic">يكون معتمدًا على</span></li>
+            <li><span class="dutch">betrokken zijn bij</span> — <span class="arabic">يكون مشاركًا في</span></li>
+            <li><span class="dutch">op de hoogte zijn van</span> — <span class="arabic">يكون على علم بـ</span></li>
+            <li><span class="dutch">rekening houden</span> — <span class="arabic">مراعاة</span></li>
+            <li><span class="dutch">invloed hebben op</span> — <span class="arabic">له تأثير على</span></li>
+            <li><span class="dutch">de voorkeur geven aan</span> — <span class="arabic">إعطاء الأفضلية لـ</span></li>
+            <li><span class="dutch">aandacht besteden aan</span> — <span class="arabic">إيلاء الاهتمام لـ</span></li>
+        </ol>
+
+    </div>
+
+    <script>
+        function copyListText() {
+            const listElement = document.getElementById('verbsContent');
+            const textToCopy = listElement.innerText;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const originalText = btn.innerHTML;
+                
+                btn.innerHTML = '✅ تم النسخ بنجاح!';
+                btn.style.backgroundColor = '#2c3e50';
+
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.backgroundColor = '#27ae60';
+                }, 2000);
+            }).catch(err => {
+                alert('حدث خطأ أثناء النسخ: ' + err);
+            });
+        }
+    </script>
+
 </body>
 </html>
